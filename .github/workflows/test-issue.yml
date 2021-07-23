@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Assign NEW VAULT LABELED issues to New Vault column in Sett Vaults project
       uses: srggrs/assign-one-project-github-action@1.2.1
-       if: contains(github.event.issue.labels.*.name, 'new vault')
+        if: contains(github.event.issue.labels.*.name, 'new vault')
       with:
         project: 'https://github.com/orgs/mitche50-test-org/projects/1'
         column_name: 'New Vault'
